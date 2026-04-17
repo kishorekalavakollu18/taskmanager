@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/taskmanager">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
