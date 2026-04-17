@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 import { ToastContainer } from 'react-toastify';
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
 
 function App() {
   return (
-    <Router basename="/taskmanager">
+    <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
